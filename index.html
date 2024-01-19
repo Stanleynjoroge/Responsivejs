@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        #myP {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p id="myP">HEY I AM WRITING JAVASCRIPT</p>
+    <button class="red" onclick="changeToRed()">Go Red</button>
+    <button class="green" onclick="changeToGreen()">Go Green</button>
+    <button class="blue" onclick="changeToBlue()">Go Blue</button>
+    <script>
+        const redBtn = document.querySelector('.red');
+        const greenBtn = document.querySelector('.green');
+        const blueBtn = document.querySelector('.blue');
+
+        function changeToRed() {
+            document.body.style.background = 'red';
+        }
+
+        function changeToGreen() {
+            document.body.style.background = 'green';
+        }
+
+        function changeToBlue() {
+            document.body.style.background = 'blue';
+        }
+    </script>
+</body>
+</html>

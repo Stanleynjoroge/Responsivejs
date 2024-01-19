@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        width: 100vw;
+        height: 100vh;
+
+       }
+       .div1{
+        border: 0;
+        padding:34px;
+        background-color: grey;
+
+       }
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+    <h1>Vanillas calculator</h1>
+    <p>Price</p>
+    <input id="myNumber1"  type="number">
+    <p>Amount</p>
+    <input id="myNumber2" type="number">
+
+    <span id = "result"></span>
+    <script>
+        function product(){
+            num1=document.getElementById("myNumber1").value
+            num2=document.getElementById("myNumber2").value
+            result = parseInt(num1) * parseInt(num2);
+
+            document.getElementById("result").innerHTML =  result;
+        }
+        product()
+        
+    </script>
+    <button onclick="product()">Calculate</button>
+</div>
+</body>
+</html>
